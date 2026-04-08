@@ -1,19 +1,8 @@
-
-import './App.css'
-
+import LandingPage from "./Pages/LandingPage"
 function App() {
-  
-
   return (
     <>
-      <section>
-        <div className='text-3xl text-blue-500'>Hello | Welcome to Tsira-Market Place</div>
-      </section>
-        
-         
-         
-
-     
+    <LandingPage/>
     </>
   )
 }
