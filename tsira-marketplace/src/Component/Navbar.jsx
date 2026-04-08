@@ -1,6 +1,7 @@
-import { HashLink } from "react-router-hash-link"
-import { useState } from "react"
-import TsiraLogo from "../assets/Tsira logo mark.png"
+import { HashLink } from "react-router-hash-link";
+import { useState } from "react";
+import TsiraLogo from "../assets/Tsira logo mark.png";
+import { Menu, X } from 'lucide-react';
 
 
 function Navbar() {
@@ -9,15 +10,15 @@ function Navbar() {
       {title: "Home", link: "/#home"},
       {title: "Features", link: "/#features"},
       {title: "Why It Matters", link: "/#why-tsira"},
-      {title: "Sustainability", link: "/#eco-impact"},
-      {title: "Built For", link: "/#users"},
+      {title: "Sustainability", link: "/#sustainable"},
+      {title: "Built For", link: "/#target-users"},
    ]
    const [nav, setNav] = useState(false)
    const handleClick = () => setNav(!nav)
   return (
-    <div className="flex justify-between py-2 px-6 fixed top-0 left-0 right-0 z-10 bg-tsira-bg">
+    
+      <div className="flex justify-between py-2 px-6 fixed top-0 left-0 right-0 z-10 bg-tsira-bg">
       <img src={TsiraLogo} alt="tsiraLogo"  className="w-14 h-14"/>
-
       <ul className="hidden md:flex items-center gap-4">
          {navItems.map((menu) => (
             <li key={menu.title} className="text-base font-semibold text-tsira-muted">
@@ -31,7 +32,34 @@ function Navbar() {
             </li>
          ))}
       </ul>
-    </div>
+       
+      <div className="md:hidden">
+       <div className="flex justify-between px-6 py-2">
+         
+         <button onClick={handleClick}>
+            {!nav ?   <Menu className="text-tsira-primary"/> : <X className="text-tsira-primary"/>}
+         </button>
+       </div>
+         <ul className={!nav ? "hidden" : "absolute top-0 left-0 min-h-screen w-full bg-tsira-bg text-tsira-muted flex flex-col justify-center items-center gap-8"}>
+           {navItems.map((menu) => (
+            <li key={menu.title} onClick={() => handleClick()} className="text-xl font-semibold text-tsira-muted py-2 hover:cursor-pointer">
+               <HashLink 
+               smooth
+               to={menu.link}
+               className="hover:text-tsira-primary"
+               >
+                  {menu.title}
+               </HashLink>
+
+            </li>
+           ))}
+         </ul>
+
+       </div>
+         
+      </div>
+    
+    
   )
 }
 
