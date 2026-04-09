@@ -10,7 +10,10 @@ function LandingPage() {
   <>
   <Navbar/>
   <Home />
-  
+  <Features/>
+  <WhyTsira/>
+  <Impact/>
+  <Users/>
   </>
   )
 }
