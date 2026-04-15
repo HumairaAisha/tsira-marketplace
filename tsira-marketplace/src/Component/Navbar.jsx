@@ -10,7 +10,7 @@ function Navbar() {
       {title: "Home", link: "/#home"},
       {title: "Features", link: "/#features"},
       {title: "Why It Matters", link: "/#why-tsira"},
-      {title: "Sustainability", link: "/#sustainable"},
+      {title: "Sustainability", link: "/#sustainability"},
       {title: "Built For", link: "/#target-users"},
    ]
    const [nav, setNav] = useState(false)
@@ -34,10 +34,10 @@ function Navbar() {
       </ul>
        
       <div className="md:hidden">
-       <div className="flex justify-between px-6 py-2">
+       <div className="flex justify-between px-6 py-2 gap-4">
          
-         <button onClick={handleClick}>
-            {!nav ?   <Menu className="text-tsira-primary"/> : <X className="text-tsira-primary"/>}
+         <button onClick={handleClick} className="hover:cursor-pointer">
+            {!nav ?  <Menu className="text-tsira-primary"/> : <X className="text-tsira-primary"/>}
          </button>
        </div>
          <ul className={!nav ? "hidden" : "absolute top-0 left-0 min-h-screen w-full bg-tsira-bg text-tsira-muted flex flex-col justify-center items-center gap-8"}>

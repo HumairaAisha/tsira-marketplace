@@ -4,6 +4,7 @@ import Features from "../Sections/Features"
 import WhyTsira from "../Sections/WhyTsira"
 import Impact from "../Sections/Impact"
 import Users from "../Sections/Users"
+import Footer from "../Component/Footer"
 
 function LandingPage() {
   return (
@@ -14,6 +15,7 @@ function LandingPage() {
   <WhyTsira/>
   <Impact/>
   <Users/>
+  <Footer />
   </>
   )
 }
