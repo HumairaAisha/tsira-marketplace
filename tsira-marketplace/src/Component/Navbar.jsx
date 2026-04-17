@@ -40,7 +40,17 @@ function Navbar() {
             {!nav ?  <Menu className="text-tsira-primary"/> : <X className="text-tsira-primary"/>}
          </button>
        </div>
-         <ul className={!nav ? "hidden" : "absolute top-0 left-0 min-h-screen w-full bg-tsira-bg text-tsira-muted flex flex-col justify-center items-center gap-8"}>
+       
+         <ul className={`${
+          !nav ? "hidden" : "flex"
+        } md:hidden absolute top-0 left-0 h-screen w-full z-40 bg-tsira-bg text-tsira-muted flex-col justify-center items-center gap-8`}>
+
+         <button
+    onClick={handleClick}
+    className="absolute top-4 right-6 z-50 hover:cursor-pointer"
+  >
+    <X className="text-tsira-primary" />
+  </button>
            {navItems.map((menu) => (
             <li key={menu.title} onClick={() => handleClick()} className="text-xl font-semibold text-tsira-muted py-2 hover:cursor-pointer">
                <HashLink 
