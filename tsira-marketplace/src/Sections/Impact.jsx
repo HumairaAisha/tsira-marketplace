@@ -6,14 +6,14 @@ function Impact() {
    const steps = ["Promoting reuse and resale of products", "Supporting sustainable brands and sellers", "Reducing waste through second-hand trading"]
   return (
     <section id='sustainability' className='scroll-mt-20'>
-      <div className='bg-tsira-bg py-28 px-8 md:px-10'>
+      <div className='bg-tsira-bg py-28 md:px-10'>
       <div className='space-y-2'>
          <motion.h3 
          variants={popIn}
           initial="initial"
           transition={{duration: 0.6}}
           whileInView="whileInView"
-         className='text-center text-3xl md:text-4xl font-semibold text-tsira-primary'>Eco-Friendly Focus</motion.h3>
+         className='text-center text-3xl md:text-4xl font-semibold text-tsira-primary pb-2'>Eco-Friendly Focus</motion.h3>
       <motion.p 
          variants={popIn}
           initial="initial"

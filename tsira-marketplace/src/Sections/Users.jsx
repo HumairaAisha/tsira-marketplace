@@ -13,7 +13,7 @@ function Users() {
           initial="initial"
           transition={{duration: 0.6}}
           whileInView="whileInView"
-         className='text-center text-3xl md:text-4xl font-semibold text-tsira-primary'>Target Users</motion.h3>
+         className='text-center text-3xl md:text-4xl font-semibold text-tsira-primary pb-10'>Target Users</motion.h3>
       
       <div>
          <motion.div 
@@ -21,7 +21,7 @@ function Users() {
           initial="initial"
           transition={{duration: 0.6}}
           whileInView="whileInView"
-         className='grid grid-cols-1 pt-15 md:grid-cols-2 lg:grid-cols-2 gap-10 px-8 md:px-10'>
+         className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 md:px-10'>
          {users.map((user, index) => (
             <div key={index} className='bg-tsira-primary/10 p-4 rounded-xl hover:shadow transition-shadow duration-300 flex flex-col hover:scale-[1.04] hover:shadow-tsira-muted'>
                <div className='flex gap-2 hover:cursor-pointer'>

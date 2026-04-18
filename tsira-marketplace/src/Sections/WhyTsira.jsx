@@ -5,7 +5,7 @@ import { popIn } from "../animations/motion";
 function WhyTsira() {
   return (
     <section id='why-tsira' className="scroll-mt-20">
-      <div className='bg-tsira-bg px-8 md:px-10'>
+      <div className='bg-tsira-bg md:px-10'>
          <motion.h3 
          variants={popIn}
           initial="initial"
@@ -19,7 +19,7 @@ function WhyTsira() {
           whileInView="whileInView"
          className="flex flex-col gap-8 px-8 md:px-10">
             <div className="text-tsira-muted p-6 col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 rounded-lg bg-tsira-primary/10">
-               <h4 className="text-tsira-muted font-bold text-xl">Simple & Familiar Experience</h4>
+               <h4 className="text-tsira-muted font-bold text-xl my-2">Simple & Familiar Experience</h4>
                <p className="text-tsira-muted">Tsira is designed like a social media app (similar to Instagram), 
                making it easy for anyone to use without a learning curve.</p>
             </div>

@@ -10,7 +10,7 @@ function Features() {
    ]
   return (
     <section id="features" className="scroll-mt-20">
-      <div className="h-full bg-tsira-bg px-8 md:px-10 py-28">
+      <div className="h-full bg-tsira-bg md:px-10 py-28">
       <div className="space-y-2">
       <motion.h3 
       variants={popIn}
