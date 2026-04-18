@@ -17,7 +17,7 @@ function WhyTsira() {
           initial="initial"
           transition={{duration: 0.6}}
           whileInView="whileInView"
-         className="flex flex-col gap-8 px-8 md:px-10">
+         className="flex flex-col gap-8 px-6 md:px-10">
             <div className="text-tsira-muted p-6 col-span-1 sm:col-span-2 lg:col-span-2 row-span-1 rounded-lg bg-tsira-primary/10">
                <h4 className="text-tsira-muted font-bold text-xl my-2">Simple & Familiar Experience</h4>
                <p className="text-tsira-muted">Tsira is designed like a social media app (similar to Instagram), 
@@ -32,7 +32,7 @@ function WhyTsira() {
                   <p className="text-tsira-muted">Store funds securely</p>
                   </div>
 
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 ">
                   <div className="rounded-full bg-tsira-primary w-2 h-2 my-2.5"></div>
                   <p className='text-tsira-muted'>Pay for products instantly </p>
                   </div>

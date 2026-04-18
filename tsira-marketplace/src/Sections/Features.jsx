@@ -31,7 +31,7 @@ function Features() {
           initial="initial"
           transition={{duration: 0.6}}
           whileInView="whileInView"
-      className="grid grid-cols-1 pt-10 md:grid-cols-2 lg:grid-cols-2 gap-8 px-8 md:px-10">
+      className="grid grid-cols-1 pt-10 md:grid-cols-2 lg:grid-cols-2 gap-8 px-6 md:px-10">
       {steps.map((step, index) => (
          <div key={index} className="bg-tsira-primary/10 p-6 rounded-xl hover:shadow hover:shadow-tsira-muted transition-shadow duration-300 flex flex-col hover:scale-[1.04]">
             <div className="flex gap-2 hover:cursor-pointer">
