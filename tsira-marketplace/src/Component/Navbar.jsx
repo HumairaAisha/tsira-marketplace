@@ -40,7 +40,6 @@ function Navbar() {
             {!nav ?  <Menu className="text-tsira-primary"/> : <X className="text-tsira-primary"/>}
          </button>
        </div>
-       
          <ul className={`${
           !nav ? "hidden" : "flex"
         } md:hidden absolute top-0 left-0 h-screen w-full z-40 bg-tsira-bg text-tsira-muted flex-col justify-center items-center gap-8`}>
