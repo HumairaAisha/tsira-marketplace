@@ -46,4 +46,4 @@ Tsira uses a custom color system built with Tailwind v4 theme tokens:
 - Typography: Clean, readable, and modern
 
 # Final Notes
-Tsira isn’t just about buying and selling — it’s about creating a more connected, secure, and responsible marketplace.
+*Tsira isn’t just about buying and selling — it’s about creating a more connected, secure, and responsible marketplace.*
