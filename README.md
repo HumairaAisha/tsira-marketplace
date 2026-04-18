@@ -20,14 +20,14 @@ Encourages reuse, resale, and sustainable buying habits.
 Designed to create transparent and peaceful transactions.
 
 ## Project Structure
-src/ 
-| 
-├── assets/     # logo
-├── components/ # (Navbar,  Footer)
-├── Sections/   # Landing page sections(Hero, features, etc)
-├── pages/      # Page-level component 
-App.jsx
-index.css
+src/ <br>
+| <br>
+├── assets/     # logo <br>
+├── components/ # (Navbar,  Footer) <br>
+├── Sections/   # Landing page sections(Hero, features, etc) <br>
+├── pages/      # Page-level component <br>
+App.jsx <br>
+index.css <br>
 main.jsx
 
 ## Tech Stack
